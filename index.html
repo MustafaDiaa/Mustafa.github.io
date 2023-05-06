@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <ul class="nav fixed-top flex-column" id="navbar">
+      <div class="row h-100">
+        <div
+          class="col-9 bg-black d-flex flex-column justify-content-between"
+          id="menuIcons"
+        >
+          <div class="navigation-anchors">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="displaySearch(); closeMenu()"
+                >Search</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="displayCategories(); closeMenu()"
+                >Categories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="displayArea(); closeMenu()"
+                >Area</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="displayIngredients(); closeMenu()"
+                >Ingredients</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="displayContact(); closeMenu()"
+                >Contact Us</a
+              >
+            </li>
+          </div>
+
+          <div class="copyrightContainer">
+            <div class="iconsContainer mb-3 d-flex">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fas fa-globe"></i>
+            </div>
+
+            <p class="mt-auto">Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+
+        <div class="menu py-3 bg-light col-3">
+          <div class="logo d-flex justify-content-center">
+            <img src="images/logo.png" alt="" />
+          </div>
+
+          <div>
+            <a
+              ><i
+                class="fa fa-align-justify fa-2x"
+                id="openIcon"
+                onclick="openMenu()"
+              ></i
+            ></a>
+            <a
+              ><i class="fa fa-align-justify fa-times fa-2x" id="closeIcon"></i
+            ></a>
+          </div>
+
+          <div class="menuContainer d-flex flex-column align-items-center">
+            <a><i class="fas fa-globe mb-2"></i></a>
+            <a><i class="fas fa-share-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </ul>
+
+    <div class="container" id="mySearch"></div>
+
+    <div class="container w-75 my-5">
+      <div class="row g-4" id="myRow"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

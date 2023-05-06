@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.form,
+.form-control,
+.form:focus,
+.form-control:focus {
+  background-color: transparent;
+  height: 40px;
+  margin-top: 10px;
+  color: #fff;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+
+.nav-link {
+  transform: translateY(500%);
+  transition: all 2s;
+}
+
+.form .search {
+  width: 100%;
+}
+
+.form-control:active {
+  background-color: black;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#closeIcon {
+  display: none;
+}
+
+#openIcon {
+  display: inline;
+}
+
+.nav {
+  width: 20%;
+  height: 100vh;
+  transform: translateX(-80%);
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 50%;
+  }
+}
+
+.nav i {
+  margin: 0 10px;
+}
+
+.fa-align-justify {
+  font-size: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+}
+
+#menuIcons {
+  padding-bottom: 10px;
+}
+
+.navigation-anchors a {
+  margin: 10px 0;
+}
+
+.copyrightContainer {
+  margin: 10px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.fa-city {
+  color: #9ba17b;
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 120%;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.286);
+}
+
+.layer p {
+  font-size: 30px;
+}
+
+.item:hover .layer {
+  top: 0%;
+}
+
+#itemIngredients {
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #212529;
+  transition: all 0.5s;
+}
+
+#itemIngredients:hover {
+  background-color: #61764b;
+}
+
+#itemArea {
+  background-color: #212529;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#itemArea:hover {
+  background-color: #61764b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-bowl-food {
+  color: #9ee650ab;
+  margin-bottom: 5px;
+}
+
+.badge {
+  font-size: 15px;
+  margin: 10px 5;
+}
+
+#mealDetails {
+  color: #fff;
+}
+
+#myMealInstruction {
+  color: #fff;
+}
+
+#myMealInstruction a {
+  margin: 20px 5;
+}
+
+.contactContainer {
+  height: 100vh;
+}
+
+.alert {
+  display: none;
+}
